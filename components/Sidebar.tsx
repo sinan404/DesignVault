@@ -33,7 +33,8 @@ export default function Sidebar() {
   const pathname = usePathname();
 
   return (
-    <aside className="w-[280px] h-screen bg-white border-r border-[#cdcdcd] flex flex-col py-6 px-6">
+    // Sidebar.tsx — outer tag should be simple, no fixed/absolute, no fighting width
+    <aside className="h-full w-full bg-white border-r border-[#cdcdcd] flex flex-col py-6 px-6">
       {/* Logo */}
       <div className="flex items-center justify-center mb-10">
         <h1 className="font-[family-name:var(--font-poppins)] font-bold text-[24px] text-[#890069] capitalize">
